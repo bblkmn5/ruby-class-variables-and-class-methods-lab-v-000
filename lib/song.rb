@@ -18,10 +18,15 @@ def self.count
   @@count
 end
 
-def self.genres(genre, new_genre)
-  genres[genre] ||= []
-  genres[genre] << new_genre
+def self.genres
+  @@genres.uniq
 end
+
+
+def self.artists
+  @@artists.uniq
+end
+
 
 def self_artist_count
   @@artists
