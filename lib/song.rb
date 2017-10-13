@@ -18,9 +18,9 @@ def self.count
   @@count
 end
 
-def self.genres(genre, genres)
+def self.genres(genre, new_genre)
   genres[genre] ||= []
-  genres[genre] << genres
+  genres[genre] << new_genre
 end
 
 def self_artist_count
